@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2df4d6c29543300a8981ec7a8375e07, type: 3}
+  m_Name: SonidosBiblioteca
+  m_EditorClassIdentifier: 
+  infectado: {fileID: 8300000, guid: e4ae6bd5f05d5c212b0964ecf00252b6, type: 3}
+  Boton: {fileID: 8300000, guid: 400656a476f55051599e9d52fa4dc077, type: 3}
+  Disparo: {fileID: 8300000, guid: a0ff8061bc469c926a7b4b3c31aac02d, type: 3}
+  Explosion: {fileID: 8300000, guid: 7ffeda3857c2021e0b8b9478876c2a03, type: 3}
+  Fondo: {fileID: 8300000, guid: cc54c9cdea99f3c31aa2976f013aec0d, type: 3}
+  Barreta: {fileID: 8300000, guid: e33a27f262936feea880ea04f7644b0f, type: 3}
+  Grillo: {fileID: 8300000, guid: 0ee224eef68207e22a323611d34d014b, type: 3}
+  Interaccion: {fileID: 8300000, guid: 179dadb4533b644eca6e43ceb2677bed, type: 3}
+  Latido_corazon_rapido: {fileID: 0}
+  Lluvia: {fileID: 8300000, guid: 940c3d6264cb7db10b3dd29305121576, type: 3}
+  Lobo: {fileID: 8300000, guid: b74783fd656dba9708c3a4e2873cff0c, type: 3}
+  Muerte: {fileID: 8300000, guid: 0bce87cdf08864bfb93019482f4fb4ab, type: 3}
+  Pajaros: {fileID: 8300000, guid: 7629d41a1b0748e61af2102677ba8078, type: 3}
+  Pasos: {fileID: 8300000, guid: b5fcb1a415f37570db4604c61d921dea, type: 3}
+  Pelea: {fileID: 8300000, guid: 74a442a35e75734829aa93be5c9818cc, type: 3}
+  Radiacion: {fileID: 8300000, guid: 0649fe4d769795ae481301cc2264f1c0, type: 3}
+  Vaca: {fileID: 8300000, guid: 55f9bf4ace858458097cb98c7f6a34e3, type: 3}
