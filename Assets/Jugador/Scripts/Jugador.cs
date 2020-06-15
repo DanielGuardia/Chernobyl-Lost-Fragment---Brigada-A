@@ -12,8 +12,11 @@ public class Jugador : MonoBehaviour
     public BaulMateriales baulMateriales;
     public Sprite caraActual;
     public Sprite[] listaCarasUI; 
-    int nivelRadiacion = 77; //Radiacion del lugar en que se encuentra
+    int nivelRadiacion = 0; //Radiacion del lugar en que se encuentra
     public int NivelRadiacion { get { return nivelRadiacion; } set { nivelRadiacion = value; } }
+    public float tValorRadiacion = 120f; // 1% de radiacion quita 1% de vida cada cuantos segundos?
+    float tRadiacion; //Cada cuanto tiempo quita una vida
+    float timerRadiacion = 0; //Timer para tRadiacion
     
     private void Awake() 
     {
@@ -23,6 +26,18 @@ public class Jugador : MonoBehaviour
     {
         Load();
     }
+    private void Update() 
+    {
+        //Radiacion
+        tRadiacion = tValorRadiacion / nivelRadiacion;
+
+        timerRadiacion += Time.deltaTime; //Timer radiacion
+        if(timerRadiacion >= tRadiacion) //Si timer es mayor al tRadiacion, quitar una vida y reiniciar el timer
+        {
+            RecibirDaño(1);
+            timerRadiacion = 0;
+        }
+    }
     public void RecibirDaño(int daño)
     {
         vida -= daño;
@@ -30,6 +45,10 @@ public class Jugador : MonoBehaviour
         {
             Morir();
         }
+    }
+    private void RadiacionQuitarVida()
+    {
+        RecibirDaño(1); 
     }
     public void HablarMensaje(string mensaje)
     {
