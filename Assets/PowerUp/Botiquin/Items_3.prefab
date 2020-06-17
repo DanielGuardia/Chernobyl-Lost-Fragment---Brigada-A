@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4106111139483019055}
   - component: {fileID: 5719760107792397480}
   - component: {fileID: 114822867872540476}
+  - component: {fileID: 3148142437744864138}
   m_Layer: 0
   m_Name: Items_3
   m_TagString: Untagged
@@ -94,3 +95,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sSonidos: {fileID: 0}
   vida: 30
+--- !u!114 &3148142437744864138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5562198804098308789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5318feb440fb8b446bb33fd3b8096e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanciaMirar: 100
