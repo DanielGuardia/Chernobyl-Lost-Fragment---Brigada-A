@@ -170,15 +170,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalInputName: Horizontal
   verticalInputName: Vertical
-  movementSpeed: 5
+  movementSpeed: 15
   jumpFallOff:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
@@ -186,8 +186,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: 1
+      outSlope: 1
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
@@ -195,7 +195,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  jumpMultiplier: 3
+  jumpMultiplier: 20
   jumpKey: 32
 --- !u!114 &832469903152292247
 MonoBehaviour:
@@ -223,9 +223,9 @@ MonoBehaviour:
   trigExplosivo: barreta
   animator: {fileID: 1172528270}
   balaPuntoSalida: {fileID: 0}
-  balaPrefab: {fileID: 8979993839999042336, guid: 9553bab07176b113ab8a9365d812130f,
+  balaPrefab: {fileID: 8979993839999042336, guid: f56cbd3b78f74c54ab4312f8502313fd,
     type: 3}
-  explosivoPrefab: {fileID: 1663637727245423498, guid: 6dc0cfb66d8cca7f38d3f5477ddf8b4d,
+  explosivoPrefab: {fileID: 1663637727245423498, guid: 981d68f0377269b429bf717b8d5ed9ab,
     type: 3}
   balas: 20
   explosivos: 5
@@ -246,8 +246,9 @@ MonoBehaviour:
   hablar: Hola
   mensajeDefault: Tengo que salir de Chernobyl...
   baulMateriales: {fileID: 0}
-  caraActual: {fileID: 0}
+  caraActual: {fileID: 21300000, guid: 8f07844a8dcbbe64aadf6cba4cf15fe0, type: 3}
   listaCarasUI: []
+  tValorRadiacion: 120
 --- !u!54 &1818423549825563218
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -256,8 +257,8 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458423409083748897}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
+  m_Mass: 90
+  m_Drag: 0.2
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -285,7 +286,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -386,8 +387,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039294748002568941}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: -0.5, z: 1}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_LocalPosition: {x: 0.6859, y: -0.4551, z: 1}
+  m_LocalScale: {x: 0.1746409, y: 0.13090895, z: 1}
   m_Children: []
   m_Father: {fileID: 458423408423561002}
   m_RootOrder: 0
