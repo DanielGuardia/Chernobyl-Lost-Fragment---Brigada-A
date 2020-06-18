@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BalaEnemigo : MonoBehaviour
 {
-    public SonidosBiblioteca sSonidos;
     public float velocidad = 2;
     public int daño;
     public float tiempoDeVida = 2;
@@ -28,8 +27,7 @@ public class BalaEnemigo : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<Jugador>().RecibirDaño(daño);
-            sSonidos.Play(other.gameObject.GetComponent<AudioSource>(), sSonidos.Vaca);
+            other.gameObject.GetComponentInParent<Jugador>().RecibirDaño(daño);
             Destroy(gameObject);
         }            
     }

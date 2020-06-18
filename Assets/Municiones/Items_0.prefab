@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8162611835024464548}
   - component: {fileID: 114480532984252642}
   - component: {fileID: 3330386538618367348}
+  - component: {fileID: 4292689116809129910}
   m_Layer: 0
   m_Name: Items_0
   m_TagString: Untagged
@@ -27,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3896440724952849503}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 310.5, y: -16.64, z: 313.69998}
-  m_LocalScale: {x: 1.527, y: 1.601, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -94,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sSonidos: {fileID: 11400000, guid: 013bca0e470c0b77ea1cce8100b01e9d, type: 2}
-  nMuniciones: 3
+  nMuniciones: 10
   soyExplosivo: 0
 --- !u!114 &3330386538618367348
 MonoBehaviour:
@@ -108,4 +109,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5318feb440fb8b446bb33fd3b8096e71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanciaMirar: 100
+  distanciaMirar: 32
+--- !u!65 &4292689116809129910
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3896440724952849503}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6, y: 3, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}

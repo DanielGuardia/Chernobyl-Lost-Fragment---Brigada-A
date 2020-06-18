@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemigoCercano_Control : MonoBehaviour
-{
+{ public float dis;
     public SonidosBiblioteca sSonidos;
+    private AudioSource audioSource;
     [SerializeField] float velocidad = 10f;
     [SerializeField] int fuerzaDaño = 15;
     [SerializeField] float distanciaPerseguir = 10f, distanciaMin = 2f;
@@ -24,9 +25,10 @@ public class EnemigoCercano_Control : MonoBehaviour
         animator = gameObject.GetComponent<Animator>();
         player = GameObject.Find("Player");
         sPlayer = player.GetComponent<Jugador>();
+        audioSource = GetComponent<AudioSource>();
     }
     private void Update() 
-    {
+    { dis = Vector3.Distance(transform.position, player.transform.position);
         if(Vector3.Distance(transform.position, player.transform.position) < distanciaPerseguir && Vector3.Distance(transform.position, player.transform.position) > distanciaMin) //Si cerca, entonces perseguir
         { //ACERCARSE
             
@@ -35,6 +37,7 @@ public class EnemigoCercano_Control : MonoBehaviour
             transform.rotation = Quaternion.Euler(eulerPos);    
             
             transform.position += transform.forward * velocidad * Time.deltaTime; //Acercarse
+            timerAtaque -= Time.deltaTime; 
             //ATACAR
             if(Vector3.Distance(transform.position, player.transform.position) <= distanciaDeGolpe)
             {           
@@ -44,16 +47,13 @@ public class EnemigoCercano_Control : MonoBehaviour
                     timerAtaque = frecuenciaAtaque;
                 } 
             } 
-            else
-            {
-                timerAtaque = 0f;            
-            } 
         }       
     }
     private void Atacar()
     { 
         PlayAnimacionAtaque();
-        sSonidos.Play(player.gameObject.GetComponent<AudioSource>(), sSonidos.Lobo);
+        //audioSource.Play();
+        //sSonidos.Play(player.gameObject.GetComponent<AudioSource>(), sSonidos.Lobo);
         sPlayer.RecibirDaño(fuerzaDaño);
     }
     private void PlayAnimacionAtaque()

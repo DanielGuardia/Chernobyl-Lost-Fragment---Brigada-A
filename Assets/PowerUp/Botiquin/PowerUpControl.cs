@@ -13,12 +13,12 @@ public class PowerUpControl : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other) 
     {
-        if(other.name == "Player")
+        if(other.name == "Player" || other.gameObject.transform.parent.name == "Player")
         {
             //sPlayer.vida += vida;
             sPlayer.RecibirDaño(-vida);
             sSonidos.Play(gameObject.GetComponent<AudioSource>(), sSonidos.Interaccion);
             Destroy(gameObject);
-        }    
+        }   
     }
 }
