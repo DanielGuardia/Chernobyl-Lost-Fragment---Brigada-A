@@ -6625,7 +6625,7 @@ AudioSource:
   Priority: 25
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 296.0809
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -8968,6 +8968,11 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7195187181767223896, guid: 5dc945b3d0ce7dcd38b74f7babab2e46,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 197.6536
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dc945b3d0ce7dcd38b74f7babab2e46, type: 3}
 --- !u!1 &218251040 stripped
@@ -9027,7 +9032,7 @@ SpriteRenderer:
   m_Size: {x: 3.41, y: 7.27}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &219231353 stripped
@@ -10709,7 +10714,7 @@ SpriteRenderer:
   m_Size: {x: 4.25, y: 7.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &254985332
@@ -30105,7 +30110,7 @@ SpriteRenderer:
   m_Size: {x: 735.42065, y: 19.179457}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &791973410
@@ -33461,7 +33466,7 @@ SpriteRenderer:
   m_Size: {x: 3.41, y: 7.27}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &859199807
@@ -38104,7 +38109,7 @@ SpriteRenderer:
   m_Size: {x: 3.41, y: 7.27}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &964902228 stripped
@@ -40956,7 +40961,7 @@ SpriteRenderer:
   m_Size: {x: 3.41, y: 7.27}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &1046169818
@@ -56307,7 +56312,7 @@ SpriteRenderer:
   m_Size: {x: 4.25, y: 7.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1413525643
@@ -56809,7 +56814,7 @@ SpriteRenderer:
   m_Size: {x: 735.42065, y: 19.179457}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1422132801
@@ -58279,7 +58284,7 @@ SpriteRenderer:
   m_Size: {x: 3.41, y: 7.27}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &1452479661
@@ -59127,7 +59132,7 @@ AudioSource:
   Priority: 25
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 366.98373
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -73373,7 +73378,7 @@ SpriteRenderer:
   m_Size: {x: 525.89185, y: 18.307281}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1823414012 stripped
@@ -74564,7 +74569,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -78982,7 +78987,7 @@ SpriteRenderer:
   m_Size: {x: 4.25, y: 7.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1985402871
@@ -82229,7 +82234,7 @@ SpriteRenderer:
   m_Size: {x: 3.41, y: 7.27}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2101961492
@@ -84154,6 +84159,6 @@ SpriteRenderer:
   m_Size: {x: 525.89185, y: 18.307281}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
