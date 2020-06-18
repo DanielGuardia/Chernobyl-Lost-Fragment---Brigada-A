@@ -7,6 +7,7 @@ using TMPro;
 public class Jugador_Interfaz : MonoBehaviour
 {
     private Jugador jugador;
+    private Jugador_Ataque jugadorAtaque;
     private GameObject interfaz;
     private Image iVida;
     private TextMeshProUGUI iTextos;
@@ -18,10 +19,14 @@ public class Jugador_Interfaz : MonoBehaviour
     private float timerMostarBaul = 0f;
     private Image iCara;
     private TextMeshProUGUI iRadiacionTexto;
+    private TextMeshProUGUI iBalasTexto;
+    private TextMeshProUGUI iExplosivosTexto;
 
     private void Awake() 
     {
-        jugador = GameObject.Find("Player").GetComponent<Jugador>();
+        GameObject jug = GameObject.Find("Player");
+        jugador = jug.GetComponent<Jugador>();
+        jugadorAtaque = jug.GetComponent<Jugador_Ataque>();
         interfaz = GameObject.Find("Interfaz_De_Partida");
         iVida = interfaz.transform.Find("Nivel_Vida").gameObject.transform.Find("Imagen").gameObject.GetComponent<Image>();
         iTextos = interfaz.transform.Find("Textos").GetComponentInChildren<TextMeshProUGUI>();
@@ -29,6 +34,8 @@ public class Jugador_Interfaz : MonoBehaviour
         iCara = interfaz.transform.Find("Cara_Personaje").GetComponent<Image>();
         iCara.sprite = jugador.caraActual;
         iRadiacionTexto = interfaz.transform.Find("Nivel_Radiacion").GetComponentInChildren<TextMeshProUGUI>();
+        iBalasTexto = interfaz.transform.Find("N_Balas").GetComponentInChildren<TextMeshProUGUI>();
+        iExplosivosTexto = interfaz.transform.Find("N_Explosivos").GetComponentInChildren<TextMeshProUGUI>();
         /*Mostar:
         vida
         hablar
@@ -69,6 +76,10 @@ public class Jugador_Interfaz : MonoBehaviour
         iCara.sprite = jugador.caraActual;
         //Radiacion
         iRadiacionTexto.text = "" + jugador.NivelRadiacion;
+        //N Balas
+        iBalasTexto.text = "" + jugadorAtaque.balas;
+        //N Explosivos
+        iExplosivosTexto.text = "" + jugadorAtaque.explosivos;
     }
     public void OnClick_Baul()
     {
